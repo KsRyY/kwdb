@@ -375,6 +375,17 @@ abstract-leveldown@^6.3.0:
     level-supports "~1.0.0"
     xtend "~4.0.0"
 
+abstract-leveldown@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/abstract-leveldown/-/abstract-leveldown-7.0.0.tgz#1a8bc3b07f502793804d456a881dc15cedb9bc5d"
+  integrity sha512-mFAi5sB/UjpNYglrQ4irzdmr2mbQtE94OJbrAYuK2yRARjH/OACinN1meOAorfnaLPMQdFymSQMlkiDm9AXXKQ==
+  dependencies:
+    buffer "^6.0.3"
+    is-buffer "^2.0.5"
+    level-concat-iterator "^3.0.0"
+    level-supports "^2.0.0"
+    queue-microtask "^1.2.3"
+
 accepts@^1.3.5, accepts@~1.3.7:
   version "1.3.7"
   resolved "https://registry.npm.taobao.org/accepts/download/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"
@@ -637,6 +648,11 @@ base64-js@^1.0.2:
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.1.tgz#58ece8cb75dd07e71ed08c736abc5fac4dbf8df1"
   integrity sha512-mLQ4i2QO1ytvGWFWmcngKO//JXAQueZvwEKtjgQFM4jIK0kU+ytMfplL8j+n5mspOfjHwoAg+9yhb7BwAHm36g==
 
+base64-js@^1.3.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+  integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
+
 base@^0.11.1:
   version "0.11.2"
   resolved "https://registry.npm.taobao.org/base/download/base-0.11.2.tgz#7bde5ced145b6d551a90db87f83c558b4eb48a8f"
@@ -807,6 +823,14 @@ buffer@^5.5.0:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
 
+buffer@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-6.0.3.tgz#2ace578459cc8fbe2a70aaa8f52ee63b6a74c6c6"
+  integrity sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==
+  dependencies:
+    base64-js "^1.3.1"
+    ieee754 "^1.2.1"
+
 builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
@@ -894,6 +918,11 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   version "5.3.1"
   resolved "https://registry.npm.taobao.org/camelcase/download/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=
+
+catering@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/catering/-/catering-2.0.0.tgz#15ce31bcbffafbf62855ea7677b0e5d23581233d"
+  integrity sha512-aD/WmxhGwUGsVPrj8C80vH7C7GphJilYVSdudoV4u16XdrLF7CVyfBmENsc4tLTVsJJzCRid8GbwJ7mcPLee6Q==
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -1352,6 +1381,14 @@ defer-to-connect@^1.0.1, defer-to-connect@^1.1.1:
   resolved "https://registry.npm.taobao.org/defer-to-connect/download/defer-to-connect-1.1.1.tgz#88ae694b93f67b81815a2c8c769aef6574ac8f2f"
   integrity sha1-iK5pS5P2e4GBWiyMdprvZXSsjy8=
 
+deferred-leveldown@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/deferred-leveldown/-/deferred-leveldown-6.0.0.tgz#364dc436682eccbd4a25a5fd5585614770d0d3d6"
+  integrity sha512-F6CLAZzNeURojlH4MCigZr54tNz+xDSi06YXsDr5uLSKeF3JKnvnQWTqd+RETh2hbWTJR3qDzGicQOWS5ZQ1BQ==
+  dependencies:
+    abstract-leveldown "^7.0.0"
+    inherits "^2.0.3"
+
 deferred-leveldown@~5.3.0:
   version "5.3.0"
   resolved "https://registry.npm.taobao.org/deferred-leveldown/download/deferred-leveldown-5.3.0.tgz#27a997ad95408b61161aa69bd489b86c71b78058"
@@ -1510,7 +1547,7 @@ encodeurl@^1.0.2, encodeurl@~1.0.2:
   resolved "https://registry.npm.taobao.org/encodeurl/download/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
 
-encoding-down@^6.2.0, encoding-down@^6.3.0:
+encoding-down@^6.2.0:
   version "6.3.0"
   resolved "https://registry.npm.taobao.org/encoding-down/download/encoding-down-6.3.0.tgz#b1c4eb0e1728c146ecaef8e32963c549e76d082b"
   integrity sha1-scTrDhcowUbsrvjjKWPFSedtCCs=
@@ -1519,6 +1556,16 @@ encoding-down@^6.2.0, encoding-down@^6.3.0:
     inherits "^2.0.3"
     level-codec "^9.0.0"
     level-errors "^2.0.0"
+
+encoding-down@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/encoding-down/-/encoding-down-7.0.0.tgz#63357e0f44b4a85664d9539bd711500da70f0c63"
+  integrity sha512-hor6z2W/ZrVqDYMawQp7VtfEt6BrvYw+mgjWLauUMZsIBjMt1/k5aa+JreLbtjwJdkjrZ39TU+pV5GpHPGRpog==
+  dependencies:
+    abstract-leveldown "^7.0.0"
+    inherits "^2.0.3"
+    level-codec "^10.0.0"
+    level-errors "^3.0.0"
 
 end-of-stream@^1.1.0:
   version "1.4.4"
@@ -1561,6 +1608,13 @@ env-editor@^0.4.0:
   version "0.4.1"
   resolved "https://registry.npm.taobao.org/env-editor/download/env-editor-0.4.1.tgz#77011e08ce45f46e404e8d996b465c684ca57502"
   integrity sha1-dwEeCM5F9G5ATo2Za0ZcaEyldQI=
+
+errno@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/errno/-/errno-1.0.0.tgz#0ea47d701864accf996412f09e29b4dc2cf3856d"
+  integrity sha512-3zV5mFS1E8/1bPxt/B0xxzI1snsg3uSCIh6Zo1qKg6iMw93hzPANk9oBFzSFBFrwuVoQuE3rLoouAUfwOAj1wQ==
+  dependencies:
+    prr "~1.0.1"
 
 errno@~0.1.1:
   version "0.1.7"
@@ -2650,6 +2704,11 @@ ieee754@^1.1.4:
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.13.tgz#ec168558e95aa181fd87d37f55c32bbcb6708b84"
   integrity sha512-4vf7I2LYV/HaWerSo3XmlMkp5eZ83i+/CDluXi/IGTs/O1sejBNhTtnxzmRZfvOUqj7lZjqHkeTvpgSFDlWZTg==
 
+ieee754@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
+  integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
+
 ignore@^4.0.3, ignore@^4.0.6:
   version "4.0.6"
   resolved "https://registry.npm.taobao.org/ignore/download/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
@@ -2665,7 +2724,7 @@ ignore@^5.1.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
-immediate@^3.2.3, immediate@~3.2.3:
+immediate@^3.2.3:
   version "3.2.3"
   resolved "https://registry.npm.taobao.org/immediate/download/immediate-3.2.3.tgz#d140fa8f614659bd6541233097ddaac25cdd991c"
   integrity sha1-0UD6j2FGWb1lQSMwl92qwlzdmRw=
@@ -2790,6 +2849,11 @@ is-buffer@^1.1.4, is-buffer@^1.1.5:
   version "1.1.6"
   resolved "https://registry.npm.taobao.org/is-buffer/download/is-buffer-1.1.6.tgz?cache=0&sync_timestamp=1569905349018&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-buffer%2Fdownload%2Fis-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha1-76ouqdqg16suoTqXsritUf776L4=
+
+is-buffer@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
+  integrity sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==
 
 is-callable@^1.1.4, is-callable@^1.1.5:
   version "1.1.5"
@@ -3270,10 +3334,22 @@ latest-version@^5.0.0:
   dependencies:
     package-json "^6.3.0"
 
+level-codec@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/level-codec/-/level-codec-10.0.0.tgz#f9e892770532c6cdcc83529546730791b0c62c12"
+  integrity sha512-QW3VteVNAp6c/LuV6nDjg7XDXx9XHK4abmQarxZmlRSDyXYk20UdaJTSX6yzVvQ4i0JyWSB7jert0DsyD/kk6g==
+  dependencies:
+    buffer "^6.0.3"
+
 level-codec@^9.0.0:
   version "9.0.1"
   resolved "https://registry.npm.taobao.org/level-codec/download/level-codec-9.0.1.tgz#042f4aa85e56d4328ace368c950811ba802b7247"
   integrity sha1-BC9KqF5W1DKKzjaMlQgRuoArckc=
+
+level-concat-iterator@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/level-concat-iterator/-/level-concat-iterator-3.0.0.tgz#416ddaf0c2ed834f006aa3124ee68906eb4769d4"
+  integrity sha512-UHGiIdj+uiFQorOrURRvJF3Ei0uHc89ciM/aRi0qsWDV2f0HXypeXUPhJKL6DsONgSR76Pc0AI4sKYEYYRn2Dg==
 
 level-concat-iterator@~2.0.0:
   version "2.0.1"
@@ -3287,6 +3363,21 @@ level-errors@2.0.1, level-errors@^2.0.0, level-errors@~2.0.0:
   dependencies:
     errno "~0.1.1"
 
+level-errors@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/level-errors/-/level-errors-3.0.0.tgz#5719f2ad9061d9f2bd7cf22e4a7def893e6d2e60"
+  integrity sha512-MZXOQT061uEjxxxq4C/Jf+M3RdEKK9e3NbxlN7yOp1LDYoLVAhE2i1j0b7XqXfl8FjFtUL7phwr3Sn0wXXoMqA==
+  dependencies:
+    errno "^1.0.0"
+
+level-iterator-stream@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/level-iterator-stream/-/level-iterator-stream-5.0.0.tgz#85b3438e1b4c54ce5aa8c0eb973cfb628117df9e"
+  integrity sha512-wnb1+o+CVFUDdiSMR/ZymE2prPs3cjVLlXuDeSq9Zb8o032XrabGEXcTCsBxprAtseO3qvFeGzh6406z9sOTRA==
+  dependencies:
+    inherits "^2.0.4"
+    readable-stream "^3.4.0"
+
 level-iterator-stream@~4.0.0:
   version "4.0.2"
   resolved "https://registry.npm.taobao.org/level-iterator-stream/download/level-iterator-stream-4.0.2.tgz#7ceba69b713b0d7e22fcc0d1f128ccdc8a24f79c"
@@ -3296,13 +3387,13 @@ level-iterator-stream@~4.0.0:
     readable-stream "^3.4.0"
     xtend "^4.0.2"
 
-level-js@^5.0.0:
-  version "5.0.1"
-  resolved "https://registry.npm.taobao.org/level-js/download/level-js-5.0.1.tgz?cache=0&sync_timestamp=1575071938362&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flevel-js%2Fdownload%2Flevel-js-5.0.1.tgz#c68f8e55c3331bcba1f5b448b5cc833f21c68628"
-  integrity sha1-xo+OVcMzG8uh9bRItcyDPyHGhig=
+level-js@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/level-js/-/level-js-6.0.0.tgz#1faff0eb92ca34e4565d1f7bca7026989855625b"
+  integrity sha512-7dp7JuaoQoqKW4ZGvrV1RB5f51/ktLdEo9fSDsh3Ofmg7sKCMu3X0CIngbY/IUz/YyskhN7LRvEVIkZHCY3LKQ==
   dependencies:
-    abstract-leveldown "~6.2.1"
-    immediate "~3.2.3"
+    abstract-leveldown "^7.0.0"
+    buffer "^6.0.3"
     inherits "^2.0.3"
     ltgt "^2.1.2"
 
@@ -3313,13 +3404,18 @@ level-option-wrap@^1.1.0:
   dependencies:
     defined "~0.0.0"
 
-level-packager@^5.1.0:
-  version "5.1.1"
-  resolved "https://registry.npm.taobao.org/level-packager/download/level-packager-5.1.1.tgz#323ec842d6babe7336f70299c14df2e329c18939"
-  integrity sha1-Mj7IQta6vnM29wKZwU3y4ynBiTk=
+level-packager@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/level-packager/-/level-packager-6.0.0.tgz#1881e062d2dc694ce88101b3212d37ef90aa7a99"
+  integrity sha512-me656XRWfOVqs9wc+mWckZ6Rb1GuP33ndN4ZntDXwXFspX8cGA++Y+YqJsdE/mjTiipTuxXf047Z4rV62nOVuw==
   dependencies:
-    encoding-down "^6.3.0"
-    levelup "^4.3.2"
+    encoding-down "^7.0.0"
+    levelup "^5.0.0"
+
+level-supports@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/level-supports/-/level-supports-2.0.0.tgz#b0b9f63f30c4175fb2612217144f03f3b77580d9"
+  integrity sha512-8UJgzo1pvWP1wq80ZlkL19fPeK7tlyy0sBY90+2pj0x/kvzHCoLDWyuFJJMrsTn33oc7hbMkS3SkjCxMRPHWaw==
 
 level-supports@~1.0.0:
   version "1.0.1"
@@ -3328,34 +3424,23 @@ level-supports@~1.0.0:
   dependencies:
     xtend "^4.0.2"
 
-level@6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/level/-/level-6.0.1.tgz#dc34c5edb81846a6de5079eac15706334b0d7cd6"
-  integrity sha512-psRSqJZCsC/irNhfHzrVZbmPYXDcEYhA5TVNwr+V92jF44rbf86hqGp8fiT702FyiArScYIlPSBTDUASCVNSpw==
+level@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/level/-/level-7.0.0.tgz#10fa2d5a0b3b21a99d33e9307c92c1270243d1ce"
+  integrity sha512-QrBnjcWywalh86ms9hfizvxT5aBHrgWEu6rLChS9tFE2wwFU3aI1r0v+2SSZIyeUr4O4PFo8+sCc1kebahdhlw==
   dependencies:
-    level-js "^5.0.0"
-    level-packager "^5.1.0"
-    leveldown "^5.4.0"
+    level-js "^6.0.0"
+    level-packager "^6.0.0"
+    leveldown "^6.0.0"
 
-leveldown@^5.4.0:
-  version "5.4.1"
-  resolved "https://registry.npm.taobao.org/leveldown/download/leveldown-5.4.1.tgz#83a8fdd9bb52b1ed69be2ef59822b6cdfcdb51ec"
-  integrity sha1-g6j92btSse1pvi71mCK2zfzbUew=
+leveldown@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/leveldown/-/leveldown-6.0.0.tgz#3ec7f00463c45f8f7c8e68248d10ab299059c7ca"
+  integrity sha512-NEsyqpfdDhpFO49Zm9htNSsWixMa9Q9sUXgrBTaQNPyPo2Kx1wRctgIXMzc7tduXJqNff8QAwulv2eZDboghxQ==
   dependencies:
-    abstract-leveldown "~6.2.1"
+    abstract-leveldown "^7.0.0"
     napi-macros "~2.0.0"
-    node-gyp-build "~4.1.0"
-
-levelup@^4.3.2:
-  version "4.3.2"
-  resolved "https://registry.npm.taobao.org/levelup/download/levelup-4.3.2.tgz#31c5b1b29f146d1d35d692e01a6da4d28fa55ebd"
-  integrity sha1-McWxsp8UbR011pLgGm2k0o+lXr0=
-  dependencies:
-    deferred-leveldown "~5.3.0"
-    level-errors "~2.0.0"
-    level-iterator-stream "~4.0.0"
-    level-supports "~1.0.0"
-    xtend "~4.0.0"
+    node-gyp-build "~4.2.1"
 
 levelup@^4.4.0:
   version "4.4.0"
@@ -3367,6 +3452,18 @@ levelup@^4.4.0:
     level-iterator-stream "~4.0.0"
     level-supports "~1.0.0"
     xtend "~4.0.0"
+
+levelup@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/levelup/-/levelup-5.0.0.tgz#7cbbfd2ffc7495b3ebd75f81f5b328eb37866c3a"
+  integrity sha512-P4IKS4J17b6dzm8iI8Irv5gvOlrqJv04Lrpq1rAgZvjR2IsVSjbXQQo1LoK/PJuouxepLE8CTIiKGmHQYZnneA==
+  dependencies:
+    catering "^2.0.0"
+    deferred-leveldown "^6.0.0"
+    level-errors "^3.0.0"
+    level-iterator-stream "^5.0.0"
+    level-supports "^2.0.0"
+    queue-microtask "^1.2.3"
 
 levn@^0.4.1:
   version "0.4.1"
@@ -3794,10 +3891,10 @@ negotiator@0.6.2:
   resolved "https://registry.npm.taobao.org/negotiator/download/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha1-/qz3zPUlp3rpY0Q2pkiD/+yjRvs=
 
-node-gyp-build@~4.1.0:
-  version "4.1.1"
-  resolved "https://registry.npm.taobao.org/node-gyp-build/download/node-gyp-build-4.1.1.tgz#d7270b5d86717068d114cc57fff352f96d745feb"
-  integrity sha1-1ycLXYZxcGjRFMxX//NS+W10X+s=
+node-gyp-build@~4.2.1:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/node-gyp-build/-/node-gyp-build-4.2.3.tgz#ce6277f853835f718829efb47db20f3e4d9c4739"
+  integrity sha512-MN6ZpzmfNCRM+3t57PTJHgHyw/h4OWnZ6mR8P5j/uZtqQr46RRuDE/P+g3n0YR/AiYXeWixZZzaip77gdICfRg==
 
 "node-libs-browser@^1.0.0 || ^2.0.0":
   version "2.2.1"
@@ -4388,6 +4485,11 @@ querystring@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
+
+queue-microtask@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
+  integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
 quick-lru@^4.0.1:
   version "4.0.1"
