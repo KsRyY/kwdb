@@ -27,7 +27,7 @@
     "koa": "2.13.0",
     "koa-body": "4.2.0",
     "level": "6.0.1",
-    "level-errors": "2.0.1",
+    "level-errors": "3.0.0",
     "subleveldown": "5.0.1",
     "yargs": "15.4.1"
   },
