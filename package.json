@@ -3,7 +3,7 @@
   "private": true,
   "devDependencies": {
     "eslint": "7.12.1",
-    "lerna": "3.22.1"
+    "lerna": "4.0.0"
   },
   "dependencies": {}
 }
